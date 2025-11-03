@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "PossessionVF";
-  src: url("./fonts/MyFont-VF.woff2") format("woff2");
+  src: url("./MyFont-VF.woff2") format("woff2");
   font-style: normal;
   font-display: swap;
 }
