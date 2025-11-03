@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Possession Font Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Styles for layout, font, animation, and the scoreboard toggle -->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- Header stays left-aligned -->
+    <h1>POSSESSION FONT DEMO</h1>
+
+    <!-- Everything below is centered -->
+    <main class="stage">
+      <!-- Editable subject (viewer can click and type).
+           Keeps plain text only; JS will further sanitize input. -->
+      <p
+  class="sample"
+  contenteditable="plaintext-only"
+  spellcheck="false"
+  aria-label="Editable subject"
+  data-placeholder="ADHESION">ADHESION</p>
+
+      <!-- Football-style possession toggle -->
+      <label class="possession-toggle">
+        <input id="possToggle" type="checkbox" aria-label="Toggle possession sweep" />
+        <div class="board" aria-hidden="true">
+          <span class="arrow left" aria-hidden="true"></span>
+          <span class="word">POSSESSION</span>
+          <span class="arrow right" aria-hidden="true"></span>
+        </div>
+      </label>
+    </main>
+
+    <!-- JS controls the one-shot 0→100 / 100→0 snap and editable behavior -->
+    <script src="./script.js" defer></script>
+  </body>
+</html>
